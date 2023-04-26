@@ -1,0 +1,60 @@
+@import "nullstyle.scss";
+body,html{
+    height:100%;
+}
+body{
+    background: url("/img/background-image.jpg") no-repeat;
+    background-size: 100%;
+}
+.container{
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+@media (max-width: 1200px){
+    .container{
+        max-width:970px;
+    }
+}
+@media (max-width: 992px){
+    .container{
+        max-width:750px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        max-width:none;
+    }
+}
+.header{
+    font-family: "Pacifico";
+}
+.header__menu{
+    position: fixed;
+    width: 60%;
+    display: inline-flex;
+    border-radius: 60px;
+    border: 10px solid black;
+    background-color: black;
+}
+.header__item{
+    font-size: 55px;
+    color: transparent;
+    padding: 40px;
+    background-clip: text;
+    background-image: linear-gradient(pink,purple);
+}
+.header__logo{
+    position:absolute;
+    background: url("/img/header_icon-v1.png");
+    background-size: 100px;
+}
+.footer{
+
+}
+.footer__icon-group{
+
+}
+.footer__icon{
+
+}

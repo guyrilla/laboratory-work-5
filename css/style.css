@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+:focus, :active {
+  outline: none; }
+
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+img {
+  vertical-align: top; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400; }
+
+body, html {
+  height: 100%; }
+
+body {
+  background: url("/img/background-image.jpg") no-repeat;
+  background-size: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px; }
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px; } }
+
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px; } }
+
+@media (max-width: 767px) {
+  .container {
+    max-width: none; } }
+
+.header {
+  font-family: "Pacifico"; }
+
+.header__menu {
+  position: fixed;
+  width: 60%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border-radius: 60px;
+  border: 10px solid black;
+  background-color: black; }
+
+.header__item {
+  font-size: 55px;
+  color: transparent;
+  padding: 40px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(pink), to(purple));
+  background-image: -webkit-linear-gradient(pink, purple);
+  background-image: -o-linear-gradient(pink, purple);
+  background-image: linear-gradient(pink, purple); }
+
+.header__logo {
+  position: absolute;
+  background: url("/img/header_icon-v1.png");
+  background-size: 100px; }
