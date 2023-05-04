@@ -1,5 +1,5 @@
 @import "nullstyle.scss";
-._container{
+.container{
     max-width: 1200px;
     margin: 0px auto;
     padding: 0px 15px;
@@ -32,15 +32,18 @@
     height:50px;
 }
 body{
-    background: url("../img/background-image.jpg") no-repeat top center;
-    background-color: #70165f;
-    background-size:cover;
+    background-image: url("../img/background-image.jpg");      
+    background-position: center center;      
+    background-repeat: no-repeat;      
+    background-attachment: fixed;      
+    background-size: cover;      
+    background-color: #464646; 
 }
 .aside{
     position:relative;
     bottom: 50%;
 }
-.body__title_title1{
+.body__title--first{
     position:relative;
     border:5px solid pink;
     border-radius: 100px;
@@ -53,7 +56,7 @@ body{
     justify-content: space-around;
     background-color:black;
 }
-.body__title_title2{
+.body__title--second{
     position:relative;
     background-color:black;
     top: 200px;
@@ -70,20 +73,17 @@ body{
     position: relative;
     left: 36%;
 }
-.title__icon_1{ 
+.title__icon--first{ 
     position:relative;
     left:35%;
     width: 160px;
     height: 160px;
 }
-.title__icon_2{
+.title__icon--second{
     position:relative;
     left:37%;
     width: 120px;
     height:120px;
-}
-.wrapper{
-    height: 1200px;
 }
 .footer{
     position:relative;
@@ -112,7 +112,7 @@ body{
     border-radius: 50px;
 }
 @media (max-width: 1200px){
-    ._container{
+    .container{
         max-width: 970px;
     }
     .body{
@@ -120,20 +120,20 @@ body{
     }
 }
 @media (max-width:992px){
-    ._container{
+    .container{
         max-width:750px;
     }
-    .title__icon_1{
+    .title__icon--first{
         position:relative;
         left:28%;
     }
-    .title__icon_2{
+    .title__icon--second{
         position:relative;
         left:32%;
     }
 }
 @media (max-width:767px){
-    ._container{
+    .container{
         max-width:none;
     }
     .header__menu{
@@ -141,7 +141,7 @@ body{
     }
 }
 @media (max-width:694px){
-    ._container{
+    .container{
         max-width:none;
     }
     .body{
@@ -149,7 +149,7 @@ body{
     }
 }
 @media (max-width:605px){
-    ._container{
+    .container{
         max-width:none;
     }
     .header__menu{
@@ -157,19 +157,19 @@ body{
     }
 }
 @media (max-width:590px){
-    ._container{
+    .container{
         max-width:none;
     }
     .body{
         font-size:17px;
     }
-    .title__icon_1{
+    .title__icon--first{
         position:relative;
         left:35%;
         height: 70px;
         width:70px;
     }
-    .title__icon_2{
+    .title__icon--second{
         position:relative;
         left:35%;
         height:70px;
@@ -185,7 +185,7 @@ body{
     }
 }
 @media (max-width:432px){
-    ._container{
+    .container{
         max-width:none;
     }
     .title__motivation{
@@ -198,16 +198,16 @@ body{
     }
 }
 @media (max-width:386px){
-    ._container{
+    .container{
         max-width:none;
     }
-    .title__icon_1{
+    .title__icon--first{
         position:relative;
         left: 26%;;
         height: 70px;
         width:70px;
     }
-    .title__icon_2{
+    .title__icon--second{
         position:relative;
         left:26%;
         height:70px;
@@ -215,7 +215,7 @@ body{
     }
 }
 @media (max-width:321px){
-    ._container{
+    .container{
         max-width:none;
     }
     .header__menu{
